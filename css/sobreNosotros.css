@@ -1,0 +1,71 @@
+.sobreNosotros--section {
+  margin: 2rem 2rem;
+  background-color: var(--Bordo);
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  /* Ajusta el color y la intensidad del sombreado */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.h2--toro {
+  display: flex;
+  justify-content: center;
+}
+.div-sobreNosotros {
+  display: flex;
+  padding: 2rem 2rem;
+}
+@media (max-width: 1024px) {
+  .div-sobreNosotros {
+    flex-wrap: wrap;
+  }
+}
+/* CARRUSEL */
+
+#conteItemsCarrusel {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.itemCarrusel {
+  height: 100%;
+  /* position: relative; */
+}
+.tarjetasCarrusel {
+  height: 100%;
+}
+.tarjetasCarrusel img {
+  height: 100%;
+  object-fit: cover;
+}
+.flechasCarrusel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.a--carrusel {
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none;
+}
+#contePuntos {
+  display: flex;
+  justify-content: center;
+}
+#contePuntos > a {
+  font-size: 1.5em;
+}
+.imgCarrusel {
+  width: 100%;
+}
+.direccion {
+  display: flex;
+}

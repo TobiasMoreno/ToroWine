@@ -1,0 +1,79 @@
+.socios {
+  color: var(--Negro);
+}
+.socios--parrafos {
+  margin: 7px 0px;
+  width: 45%;
+  display: inline-block;
+}
+.socios--div {
+  display: inline;
+}
+.h4--socios {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+.p--atencion {
+  color: #ff0000;
+}
+.p--documentacion {
+  color: var(--Blanco);
+  font-size: 2rem;
+  padding: 4px;
+}
+.input--center {
+  display: flex;
+  justify-content: center;
+}
+.h3--socios {
+  background: var(--Negro);
+  padding: 4px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.margin {
+  margin: 3rem;
+}
+.margin--bottom {
+  margin-bottom: 2rem;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.direccion input{
+  margin: .5rem;
+  margin-top:1rem;
+  font-size: 1.5rem;
+  width: 9rem;
+}
+.direccion p{
+  font-size: 1.5rem;
+  margin: 0;
+}
+select{
+  max-width: 20rem;
+}
+input{
+  max-width: 20rem;
+}
+@media (max-width: 768px) {
+  .direccion .socios--parrafos input {
+    width: 14rem;
+  }
+  .direccion .socios--parrafos input[name="cp"] {
+    width: 14rem;
+    margin-left: 2rem;
+  }
+  .direccion .socios--parrafos select[name="piso"] {
+    width: 4rem;
+    margin-left: 1.5rem;
+  }
+  .fecNac select{
+    width: 9rem;
+    margin: 1rem;
+  }
+
+}

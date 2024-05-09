@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toro Wine</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/socios.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="js/index.js"></script>
+    <script src="js/modernize.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/Logo Blanco.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navegacion contenedor">
+        <a
+          href="https://twitter.com/ToroWine"
+          class="navegacion__enlace"
+          target="_blank"
+        >
+          <i class="bx bxl-twitter icono"></i>
+        </a>
+        <!--Icono Twitter-->
+        <a
+          href="https://www.instagram.com/torowine_/"
+          class="navegacion__enlace icono"
+          target="_blank"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <!--Icono Instagram-->
+        <a href="index.html ">
+          <img src="./img/Logo Blanco.png" alt="Logo Toro" class="toro" />
+        </a>
+        <!-- Logo Toro -->
+        <a
+          href="https://maps.app.goo.gl/usvNLuP8sVbWGH8a7"
+          class="navegacion__enlace icono"
+          target="_blank"
+        >
+          <i class="bx bx-map"></i>
+        </a>
+        <!-- Icono Maps -->
+        <a
+          href="https://www.youtube.com/@UrbanBeats23"
+          class="navegacion__enlace icono"
+          target="_blank"
+        >
+          <i class="bx bxl-youtube"></i>
+          <!-- Icono Youtube -->
+        </a>
+      </nav>
+    </header>
+    <main class="contenedor">
+      <section>
+        <h4 class="h4--socios">Asociarse: Socio Activo</h4>
+
+        <p>
+          Ahora podés asociarte de manera muy sencilla completando el siguiente
+          formulario:
+        </p>
+        <p>
+          Una vez completados los datos, deberás abonar tu primer cuota para
+          activarlo. Siendo socio ya podrés comprar un abono para los partidos
+          que Toro Wine haga de local en el siguiente torneo a precios
+          exclusivos.
+        </p>
+
+        <p>
+          Por el momento, desde la web no se permite la generación de nuevos
+          socios de la categoria GRUPO FAMILIAR. Para esto, debes ir a un centro
+          de socios personalemente. De todas maneras, si podrás abonar las
+          cuotas y comprar abonos para los integrantes de dicho grupo desde
+          aquí.
+        </p>
+
+        <form action="">
+          <h3 class="h3--socios">DATOS PERSONALES</h3>
+
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Tipo y Nro de Documento</strong> <font> * </font>
+            </p>
+            <p class="socios--parrafos">
+              <select name="tipodoc">
+                <option value="DNI">DNI</option>
+                <option value="EMP">EMP</option>
+                <option value="EXT">EXT</option>
+                <option value="LC">LC</option>
+                <option value="LE">LE</option>
+                <option value="PAL">PAL</option>
+                <option value="PAS">PAS</option>
+                <option value="PRU">PRU</option>
+              </select>
+
+              <input
+                name="nrodoc"
+                type="number"
+                size="9"
+                maxlength="15"
+                required=""
+              />
+            </p>
+          </div>
+
+          <p class="socios--parrafos">
+            <strong>Nombre</strong><font> * </font>
+          </p>
+          <p class="socios--parrafos">
+            <input
+              name="nombre"
+              type="text"
+              size="25"
+              maxlength="50"
+              required=""
+            />
+          </p>
+
+          <p class="socios--parrafos">
+            <strong>Apellido</strong><font> * </font>
+          </p>
+          <p class="socios--parrafos">
+            <input
+              name="apellido"
+              type="text"
+              size="25"
+              maxlength="50"
+              required=""
+            />
+          </p>
+
+          <p class="socios--parrafos"><strong>Sexo</strong><font> * </font></p>
+          <p class="socios--parrafos">
+            <select name="sexo">
+              <option value="M">Masculino</option>
+              <option value="F">Femenino</option>
+            </select>
+          </p>
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Fecha de Nacimiento</strong>
+            </p>
+            <p class="socios--parrafos fecNac">
+              <select id="anio" name="anio" class="campos" required="">
+                <option value="" selected="selected">elija año</option>
+              </select>
+
+              <select name="mes" required="">
+                <option value="">elija mes</option>
+              </select>
+
+              <select name="dia" id="dia" required="">
+                <option value="">elija dia</option>
+              </select>
+            </p>
+          </div>
+          <p class="socios--parrafos">
+            <strong>E-mail</strong><font> * </font>
+          </p>
+          <p class="socios--parrafos">
+            <input
+              name="email"
+              type="text"
+              size="25"
+              maxlength="50"
+              required=""
+            />
+          </p>
+
+          <p class="socios--parrafos">
+            <strong>Teléfono Fijo</strong><font> * </font>
+          </p>
+          <p class="socios--parrafos">
+            <input
+              name="telefono"
+              type="text"
+              size="25"
+              maxlength="50"
+              required=""
+            />
+          </p>
+
+          <p class="socios--parrafos">
+            <strong>Teléfono Celular</strong>
+          </p>
+          <p class="socios--parrafos">
+            <input name="celular" type="text" size="25" maxlength="50" />
+          </p>
+
+          <div class="flex-start direccion">
+            <p class="socios--parrafos">
+              <strong>Dirección</strong><font> * </font>
+            </p>
+            <div class="socios--parrafos">
+              <p>
+                Calle:
+                <input
+                  name="calle"
+                  type="text"
+                  size="30"
+                  maxlength="50"
+                  required=""
+                />
+              </p>
+              <p>
+                Nro:
+                <input name="nro" type="text" maxlength="5" required="" />
+              </p>
+              <p>
+                Piso:
+                <select name="piso" id="pisos">
+                  <option value="0">PB</option>
+                </select>
+              </p>
+              <p>
+                Depto:
+                <input name="depto" type="text" maxlength="5" />
+              </p>
+              <p>
+                Torre:
+                <input name="torre" type="text" maxlength="5" />
+              </p>
+              <p>
+                CP:
+                <input name="cp" type="text" maxlength="5" required="" />
+              </p>
+            </div>
+          </div>
+          <section class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Barrio</strong><font> * </font>
+            </p>
+            <p class="socios--parrafos">
+              <select
+                name="barrio"
+                onchange="if(this.value=='1') {document.getElementById('otrobarrio').disabled = false} else {document.getElementById('otrobarrio').disabled = true} "
+              >
+                <option value="1">OTRO --&gt;</option>
+                <option value="595">1 DE JULIO</option>
+                <option value="590">1 DE MAYO</option>
+                <option value="514">16 DE ABRIL</option>
+                <option value="558">16 DE NOVIEMBRE</option>
+                <option value="182">17 DE OCTUBRE</option>
+                <option value="444">2 DE SEPTIEMBRE</option>
+                <option value="428">20 DE JUNIO</option>
+                <option value="280">23 DE ABRIL</option>
+                <option value="610">25 DE MAYO</option>
+                <option value="323">9 DE JULIO</option>
+                <option value="1">A DEFINIR</option>
+                <option value="16">ACOSTA</option>
+                <option value="195">AERONAUTICO</option>
+                <option value="504">AIRES DEL SUR</option>
+                <option value="516">ALBERDI</option>
+                <option value="546">ALEJANDRO CARBO</option>
+                <option value="107">ALEM</option>
+                <option value="470">ALMIRANTE BROWN</option>
+                <option value="176">ALTA CORDOBA</option>
+                <option value="414">ALTA MIRA</option>
+                <option value="102">ALTAMIRA</option>
+                <option value="427">ALTO ALBERDI</option>
+                <option value="447">ALTO DE VELEZ SARFIELD</option>
+                <option value="400">ALTO GENERAL PAZ</option>
+                <option value="462">ALTO HERMOSO</option>
+                <option value="260">ALTO MIERES</option>
+                <option value="170">ALTO PALERMO</option>
+                <option value="604">ALTO VERDE</option>
+                <option value="226">ALTO VILLASOL</option>
+                <option value="532">ALTOS DE GENERAL PAZ</option>
+                <option value="96">ALTOS DE SAN MARTIN</option>
+                <option value="302">ALTOS DE SAN PEDRO</option>
+                <option value="650">ALTOS DE VELEZ SARFIELD</option>
+                <option value="142">ALTOS DEL CHATEAU</option>
+                <option value="592">AMEGHINOS</option>
+                <option value="197">AMEGUINO NORTE</option>
+                <option value="172">AMEGUINO SUR</option>
+                <option value="501">AMOLIACION SAN JORGE</option>
+                <option value="245">AMPLIACION 23 DE ABRIL</option>
+                <option value="611">AMPLIACION AMERICA</option>
+                <option value="498">AMPLIACION ARTIGA</option>
+                <option value="644">AMPLIACION CABILDO</option>
+                <option value="291">AMPLIACION CERVECEROS</option>
+                <option value="235">AMPLIACION CORDOBA</option>
+                <option value="575">AMPLIACION FERREYRA</option>
+                <option value="78">AMPLIACION LA DOROTEA</option>
+                <option value="88">AMPLIACION LAS PALMAS</option>
+                <option value="240">AMPLIACION MARCOS SASTRE</option>
+                <option value="500">AMPLIACION MATIENZOS</option>
+                <option value="248">AMPLIACION PALMAR</option>
+                <option value="341">AMPLIACION PANAMERICANO</option>
+                <option value="468">AMPLIACION PRIMERO DE MAYO</option>
+                <option value="326">AMPLIACION RESIDENCIAL AMERICA</option>
+                <option value="300">AMPLIACION SAN PABLO</option>
+                <option value="420">AMPLIACION VICO</option>
+                <option value="511">AMPLIACION YAPEYU</option>
+                <option value="236">ANEXO LAS PALMAS</option>
+                <option value="638">ARAGON</option>
+                <option value="368">ARCO I</option>
+                <option value="49">ARENALES</option>
+                <option value="437">ARGUELLO</option>
+                <option value="394">ARGUELLO NORTE</option>
+                <option value="602">ARMADA NACIONAL</option>
+                <option value="215">ARTIGAS</option>
+                <option value="223">ARTURO CAPDEVILA</option>
+                <option value="190">ARTURO CAPDEVILLA</option>
+                <option value="59">ATE</option>
+                <option value="509">AUTODROMO</option>
+                <option value="384">AVELLANEDA</option>
+                <option value="152">AVENIDA</option>
+                <option value="374">AYACUCHO</option>
+                <option value="166">BAJO PALERMO</option>
+                <option value="485">BALCONES DEL CHATEAU</option>
+                <option value="406">BANCARIA I</option>
+                <option value="74">BARRANCAS DEL CERRO</option>
+                <option value="68">BARRIO PARQUE CAPITAL</option>
+                <option value="679">BARRIO PARQUE DON BOSCO</option>
+                <option value="179">BELGRANO</option>
+                <option value="13">BELLA VISTA</option>
+                <option value="325">BENJAMIN CABRAL</option>
+                <option value="572">BERNAL OESTE</option>
+                <option value="409">BETANIA</option>
+                <option value="208">BIALET MASSE</option>
+                <option value="630">BUENOS AIRES</option>
+                <option value="314">CABALLITO</option>
+                <option value="79">CABANA</option>
+                <option value="378">CABA?AS DEL PILAR</option>
+                <option value="527">CABILDO</option>
+                <option value="477">CABO FARINA</option>
+                <option value="395">CABO FARINI</option>
+                <option value="347">CACERES</option>
+                <option value="667">CAFERATA</option>
+                <option value="555">CALIFORNIA</option>
+                <option value="615">CAMARA</option>
+                <option value="464">CAMINO A SAN CARLOS</option>
+                <option value="194">CAMPAMENTO MINETTI</option>
+                <option value="407">CAMPO DE VUELO</option>
+                <option value="649">CANTEGRI</option>
+                <option value="584">CAPDEVILLE</option>
+                <option value="603">CAPITAL</option>
+                <option value="144">CARCANO</option>
+                <option value="466">CAROLA LORENZINI</option>
+                <option value="512">CARRARA</option>
+                <option value="257">CARRILOBO</option>
+                <option value="155">CASTAGNINO</option>
+                <option value="643">CASTA?ARES</option>
+                <option value="186">CASTELLANOS</option>
+                <option value="6">CBA</option>
+                <option value="101">CBA CTRO</option>
+                <option value="169">CENT</option>
+                <option value="524">CENTENARIO</option>
+                <option value="426">CENTRO</option>
+                <option value="254">CENTRO AMERICA</option>
+                <option value="490">CENTROO</option>
+                <option value="110">CEP</option>
+                <option value="619">CERRO CHICO</option>
+                <option value="435">CERRO DE LAS ROSAS</option>
+                <option value="534">CERRO NORTE</option>
+                <option value="24">CERVECEROS</option>
+                <option value="98">CHACABUCO</option>
+                <option value="607">CHACRA 2</option>
+                <option value="354">CHACRAS DE CORIA</option>
+                <option value="364">CHACRAS DE LA VILLA</option>
+                <option value="439">CHATEAU</option>
+                <option value="637">CHINGOLO II</option>
+                <option value="340">CIUDAD AMPL. FERREYRA</option>
+                <option value="251">CIUDAD DE LOS NI?OS</option>
+                <option value="127">CIUDAD DE MIS SUE?OS</option>
+                <option value="303">CIUDAD EVITA</option>
+                <option value="158">CIUDAD OB. ANGELLELI</option>
+                <option value="249">CIUDAD PARQUE LAS ROSAS</option>
+                <option value="339">CIUDADELA</option>
+                <option value="161">CLARET ANEXO</option>
+                <option value="513">CLARO DEL BOSQUE</option>
+                <option value="238">CLEMENTINA</option>
+                <option value="357">COFICO</option>
+                <option value="3">COLINAS</option>
+                <option value="288">COLINAS DE VELEZ SARFIELD</option>
+                <option value="379">COLINAS DEL CERRO</option>
+                <option value="187">COLON</option>
+                <option value="12">COLONIA CAROYA</option>
+                <option value="577">COLONIA LOLA</option>
+                <option value="108">COMERCIAL</option>
+                <option value="149">COMPLEJO LOS DOCENTES</option>
+                <option value="156">COMPLEJO PALMAS DEL PILAR</option>
+                <option value="70">CONDOR ALTO</option>
+                <option value="663">CONDOR BAJO</option>
+                <option value="296">CONGRESO</option>
+                <option value="422">COOP 2 DE MAYO</option>
+                <option value="343">COOP FAMILIAS UNIDAS</option>
+                <option value="570">COOPERATIVA 2 DE MAYO</option>
+                <option value="659">COOPERATIVA LA UNIDAD</option>
+                <option value="193">COOPERATIVAS LOS ANDES</option>
+                <option value="66">COPERATIVA VILLA HERMOSA</option>
+                <option value="233">CORDOBA</option>
+                <option value="640">CORONEL OLMEDO</option>
+                <option value="656">CORRAL DE PALOS</option>
+                <option value="528">COSTA AZUL</option>
+                <option value="499">COSTA SACATE</option>
+                <option value="586">COUNTRY DEL JOCK</option>
+                <option value="367">COUNTRY VIEJO ALGARROBO</option>
+                <option value="105">CRISOL NORTE</option>
+                <option value="259">CRISOL SUR</option>
+                <option value="320">CRUCERO</option>
+                <option value="301">CTRO</option>
+                <option value="243">CU CU</option>
+                <option value="553">CUESTA COLORADA</option>
+                <option value="60">CUIDAD DE MI ESPERANZA</option>
+                <option value="495">CUIDADELA</option>
+                <option value="216">CUMBRES DEL GOLF</option>
+                <option value="330">CUPANI</option>
+                <option value="205">CWNTRO</option>
+                <option value="634">DEAN FUNES</option>
+                <option value="138">DOCTOR COCA</option>
+                <option value="599">DOMINGUEZ</option>
+                <option value="360">DON BOSCO</option>
+                <option value="493">DUCASSE</option>
+                <option value="275">DUMESNIL</option>
+                <option value="565">EJERCITO ARGENTINO</option>
+                <option value="286">EL ARADO</option>
+                <option value="432">EL BOSQUE</option>
+                <option value="467">EL CA?ITO</option>
+                <option value="484">EL CEIBO</option>
+                <option value="674">EL LIBERTADOR</option>
+                <option value="543">EL OBRERO</option>
+                <option value="370">EL PALOMAR</option>
+                <option value="348">EL PARADOR</option>
+                <option value="402">EL PRADO</option>
+                <option value="32">EL PUEBLITO</option>
+                <option value="150">EL QUEBRACHAL</option>
+                <option value="58">EL QUEBRACHO</option>
+                <option value="372">EL REFUGIO</option>
+                <option value="389">EL TALAR</option>
+                <option value="203">ELISEO FRINGES</option>
+                <option value="351">EMPALME</option>
+                <option value="393">EPICURO</option>
+                <option value="549">ERNESTO GUEVARA</option>
+                <option value="675">ESCALANTE</option>
+                <option value="5">ESCOBAR</option>
+                <option value="147">ESMATA</option>
+                <option value="405">ESPA?OL</option>
+                <option value="396">ESPERANZA</option>
+                <option value="436">ESTACION FLORES</option>
+                <option value="633">EVA PERON</option>
+                <option value="478">FAMILIAS UNIDAS</option>
+                <option value="413">FARINA</option>
+                <option value="228">FATICA</option>
+                <option value="505">FEDERACION 2</option>
+                <option value="136">FELIPE BOTTA</option>
+                <option value="359">FERRER</option>
+                <option value="547">FERREYRA</option>
+                <option value="77">FERROVIARIO MIRE</option>
+                <option value="46">FINCAS DEL SUR</option>
+                <option value="50">FLORENCIO VARELA</option>
+                <option value="404">FLORES</option>
+                <option value="55">FLORESTA</option>
+                <option value="117">FORTIN DEL POZO</option>
+                <option value="218">FRANCISCO MARTINEZ</option>
+                <option value="34">FUTURA</option>
+                <option value="472">GENERAL ARENALES</option>
+                <option value="483">GENERAL ARTIGAS</option>
+                <option value="349">GENERAL BUSTOS</option>
+                <option value="391">GENERAL LEVALLE</option>
+                <option value="56">GENERAL PRINGLES</option>
+                <option value="129">GENREAL RAMIREZ</option>
+                <option value="212">GODOY CRUZ</option>
+                <option value="365">GRAL BELGRANO</option>
+                <option value="184">GRAL BUSTOS</option>
+                <option value="441">GRAL MOSCONI</option>
+                <option value="85">GRAL PAZ</option>
+                <option value="576">GRAL SAVIO</option>
+                <option value="376">GRAL. LA MADRID</option>
+                <option value="520">GRAN BOURG</option>
+                <option value="26">GRAND BOURG</option>
+                <option value="526">GRANJA DE ARGUELLO</option>
+                <option value="538">GRANJA DE FUNES</option>
+                <option value="606">GUEMES</option>
+                <option value="93">GUI?AZU</option>
+                <option value="33">HIPOLITO HIRIGOYEN</option>
+                <option value="361">HORIZONTE</option>
+                <option value="474">IBETA</option>
+                <option value="352">INAUDI</option>
+                <option value="54">INDEPENDENCIA</option>
+                <option value="287">INDUSTRIAL</option>
+                <option value="112">IPONA</option>
+                <option value="548">IPV</option>
+                <option value="64">IPV ARGUELLO</option>
+                <option value="475">IPV POLICIAL</option>
+                <option value="448">IPV VA POSSE</option>
+                <option value="94">ITUZAINGO</option>
+                <option value="20">ITUZAINGO ANEXO</option>
+                <option value="111">J. NEWBERY</option>
+                <option value="206">JAIROS</option>
+                <option value="608">JAMES CRAIK</option>
+                <option value="261">JARDIN</option>
+                <option value="585">JARDIN ALBORADA</option>
+                <option value="305">JARDIN DE HIPODROMO</option>
+                <option value="434">JARDIN DE LOS SOLES</option>
+                <option value="578">JARDIN DEL PILAR</option>
+                <option value="113">JARDIN DEL SUR</option>
+                <option value="38">JARDIN ESPINOSA</option>
+                <option value="424">JARDIN RESIDENCIAL</option>
+                <option value="311">JERONIMO LUIS DE CABRERA</option>
+                <option value="281">JESUS NAZARENO</option>
+                <option value="207">JORGE NEWVERI</option>
+                <option value="306">JOSE HERNANDEZ</option>
+                <option value="82">JOSE IGNACIO DIAZ</option>
+                <option value="48">JOSE IGNACIO DIAZ III</option>
+                <option value="57">JOSE IGNACIO DIAZ V</option>
+                <option value="331">JOSE IGNACIO RUCCI</option>
+                <option value="419">JOSE LEON SUAREZ</option>
+                <option value="270">JOSE MIGUEL MU?OZ</option>
+                <option value="616">JUAN B JUSTO</option>
+                <option value="28">JUAN PABLO II ANEXO II</option>
+                <option value="264">JUAN XXIII</option>
+                <option value="90">JUNIORS</option>
+                <option value="89">KENNEDY</option>
+                <option value="635">LA BARRA</option>
+                <option value="492">LA BOCA</option>
+                <option value="410">LA CAMPANA</option>
+                <option value="229">LA CAPILLA</option>
+                <option value="612">LA CAROLINA</option>
+                <option value="506">LA COLONIA</option>
+                <option value="636">LA CRUZ</option>
+                <option value="25">LA CUESTA</option>
+                <option value="440">LA FLORIDA</option>
+                <option value="597">LA FRANCE</option>
+                <option value="47">LA HERRADURA</option>
+                <option value="328">LA LOMA</option>
+                <option value="531">LA LUCINDA</option>
+                <option value="622">LA MADRID</option>
+                <option value="564">LA PERLA</option>
+                <option value="135">LA QUINTA</option>
+                <option value="568">LA REPRESA</option>
+                <option value="454">LA RESERVA</option>
+                <option value="476">LA RUFFINA</option>
+                <option value="523">LA SALLE</option>
+                <option value="596">LA TABLADA</option>
+                <option value="151">LA TOMA</option>
+                <option value="61">LA UNION</option>
+                <option value="362">LAGUNA LARGA</option>
+                <option value="237">LANUS</option>
+                <option value="45">LANUS OESTE</option>
+                <option value="336">LAS DALIAS</option>
+                <option value="27">LAS DELICIAS</option>
+                <option value="167">LAS FLORES</option>
+                <option value="188">LAS LILAS</option>
+                <option value="313">LAS MAGNLIAS</option>
+                <option value="126">LAS MAGNOLIAS</option>
+                <option value="250">LAS MALVINAS</option>
+                <option value="335">LAS MARGARITAS</option>
+                <option value="168">LAS PALMAS</option>
+                <option value="118">LAS POLINESIAS</option>
+                <option value="373">LAS ROSAS</option>
+                <option value="337">LAS ROSAS NORTE</option>
+                <option value="582">LAS ROSAS SUR</option>
+                <option value="198">LAS TEJAS DEL SUR</option>
+                <option value="563">LAS TERRAZAS</option>
+                <option value="21">LAS VIOLETAS</option>
+                <option value="421">LASALLE</option>
+                <option value="159">LATINOAMERICA</option>
+                <option value="571">LICEO GRAL PAZ</option>
+                <option value="227">LICEO II</option>
+                <option value="655">LICEO III</option>
+                <option value="139">LILI BENITEZ</option>
+                <option value="141">LINIERS</option>
+                <option value="29">LOMAS</option>
+                <option value="613">LOMAS DE LA CAROLINA</option>
+                <option value="174">LOMAS DE SAN MARTIN</option>
+                <option value="617">LOMAS DE ZAMORA</option>
+                <option value="104">LOMAS DEL SUQUIA</option>
+                <option value="140">LOS ALAMOS</option>
+                <option value="230">LOS ALGARROBOS</option>
+                <option value="358">LOS BILEVARES</option>
+                <option value="601">LOS BOULEVARES</option>
+                <option value="387">LOS CEDROS</option>
+                <option value="508">LOS CHINGOLOS</option>
+                <option value="219">LOS CIELOS</option>
+                <option value="502">LOS CIGARRALES A</option>
+                <option value="488">LOS EUCALIPTUS</option>
+                <option value="220">LOS FILTROS</option>
+                <option value="449">LOS GIGANTES</option>
+                <option value="75">LOS GIGANTES ANEXO</option>
+                <option value="319">LOS GIGANTES ANEXOS</option>
+                <option value="163">LOS GRANADEROS</option>
+                <option value="408">LOS GRANADOS</option>
+                <option value="318">LOS MANANTIALES</option>
+                <option value="371">LOS NARANJOS</option>
+                <option value="137">LOS NOGALES</option>
+                <option value="201">LOS OLMOS</option>
+                <option value="529">LOS PARAISOS</option>
+                <option value="204">LOS PINOS</option>
+                <option value="95">LOS PLATANOS</option>
+                <option value="552">LOS QUIMICOS</option>
+                <option value="542">LOS ROBLES</option>
+                <option value="192">LOS SAUCES</option>
+                <option value="72">LOS TALITAS</option>
+                <option value="154">LOZA</option>
+                <option value="239">LUCHI</option>
+                <option value="497">LUIS DE TEJEDA</option>
+                <option value="231">LUQUE</option>
+                <option value="446">MAFEQUIN</option>
+                <option value="452">MAIPU</option>
+                <option value="641">MAIPU II</option>
+                <option value="191">MALAGUE?O</option>
+                <option value="621">MALDONADO</option>
+                <option value="15">MALVINAS</option>
+                <option value="652">MANANTIALES</option>
+                <option value="199">MARCELO T DE ALVEAR</option>
+                <option value="539">MARECHAL</option>
+                <option value="460">MARIANO BALCARCE</option>
+                <option value="369">MARIANO FRAGUEIRO</option>
+                <option value="411">MARIANO FRAGUEIRO ANEXO</option>
+                <option value="588">MARQUES DE SOBREMONTE</option>
+                <option value="255">MARQUEZ DE SOBREMONTE</option>
+                <option value="145">MATADEROS</option>
+                <option value="451">MATIENZO</option>
+                <option value="18">MAURIZZI</option>
+                <option value="482">MEDIALUNA</option>
+                <option value="37">MENDIOLAZA GOLF</option>
+                <option value="540">MERCANTIL</option>
+                <option value="573">MI REFUGIO</option>
+                <option value="401">MI VALLE</option>
+                <option value="589">MIDLOTHIAN</option>
+                <option value="507">MIGRAN</option>
+                <option value="332">MIGUEL MU?OZ</option>
+                <option value="83">MILANO</option>
+                <option value="338">MILIZZI</option>
+                <option value="416">MINETTI 3</option>
+                <option value="183">MIRADOR</option>
+                <option value="598">MIRALTA</option>
+                <option value="52">MIRIZZI</option>
+                <option value="242">MONTE CRISTO</option>
+                <option value="175">MONZA</option>
+                <option value="181">MOSCONI</option>
+                <option value="471">MULLER</option>
+                <option value="525">MULLER</option>
+                <option value="131">NATANIA 19</option>
+                <option value="356">NECOCHEA</option>
+                <option value="91">NICOLAS AVELLANEDA</option>
+                <option value="345">NINGUNO</option>
+                <option value="355">NORTE</option>
+                <option value="65">NUESTRO HOGAR 3</option>
+                <option value="521">NUEVA CORDOBA</option>
+                <option value="106">NUEVA ITALIA</option>
+                <option value="581">NUEVO ARGUELLO</option>
+                <option value="324">NUEVO RIO CEBALLOS</option>
+                <option value="670">NUEVO URCA</option>
+                <option value="380">OBRAS SANITARIAS</option>
+                <option value="605">OBSERVATORIO</option>
+                <option value="41">OLIVOS</option>
+                <option value="36">O?A</option>
+                <option value="593">PA</option>
+                <option value="63">PADRE CLARET</option>
+                <option value="295">PALERMO</option>
+                <option value="43">PANAMERICANO</option>
+                <option value="271">PARQUE</option>
+                <option value="671">PARQUE ALAMEDA</option>
+                <option value="450">PARQUE ATLANTICA</option>
+                <option value="535">PARQUE CAPITAL</option>
+                <option value="19">PARQUE CHACABUCO</option>
+                <option value="486">PARQUE DE LA VEGA III</option>
+                <option value="210">PARQUE FUTURA</option>
+                <option value="81">PARQUE HORIZONTE</option>
+                <option value="269">PARQUE HORIZONTE SUR</option>
+                <option value="425">PARQUE ITUZAINGO</option>
+                <option value="234">PARQUE LA GRUTA</option>
+                <option value="327">PARQUE LA VEGA</option>
+                <option value="146">PARQUE LATINO</option>
+                <option value="322">PARQUE LICEO</option>
+                <option value="491">PARQUE LOS FRESNOS</option>
+                <option value="125">PARQUE MONTECRISTO</option>
+                <option value="642">PARQUE NORTE</option>
+                <option value="442">PARQUE REPUBLICA</option>
+                <option value="412">PARQUE SAN ANTONIO</option>
+                <option value="559">PARQUE SAN CARLOS</option>
+                <option value="363">PARQUE SAN FRANCISCO</option>
+                <option value="398">PARQUE SAN JUAN</option>
+                <option value="44">PARQUE SUIZO</option>
+                <option value="536">PARQUE TABLADA</option>
+                <option value="221">PARQUE UNIVERSIDAD</option>
+                <option value="23">PARQUE VELEZ SARFIELD</option>
+                <option value="657">PARQUE VIRREY</option>
+                <option value="177">PARUQE LOS MOLINOS</option>
+                <option value="247">PARUQE NORTE</option>
+                <option value="307">PASO DE LOS ANDES</option>
+                <option value="344">PATRIA</option>
+                <option value="92">PATRICIOS</option>
+                <option value="545">PATRON COSTAS</option>
+                <option value="594">PAVIA</option>
+                <option value="180">PELEGRINI</option>
+                <option value="342">PICO TRUNCADO</option>
+                <option value="132">PIEDRAS BLANCAS</option>
+                <option value="298">PILAR</option>
+                <option value="42">PINARES DE CLARET</option>
+                <option value="648">PLAYAS DE ORO</option>
+                <option value="171">POETA LUGONES</option>
+                <option value="673">POLICIAL</option>
+                <option value="382">POLIDEPORTIVO</option>
+                <option value="626">PORTAL DE PAZ</option>
+                <option value="653">PORTON DE PIEDRA</option>
+                <option value="299">POSTA DE VARGAS</option>
+                <option value="115">PQE AMUCHASTEGUI</option>
+                <option value="165">PQUE LICEO III</option>
+                <option value="97">PRADO DE LA VILLA</option>
+                <option value="487">PRADOS DE LAVILLA</option>
+                <option value="71">PRIMERA JUNTA</option>
+                <option value="121">PRIMERO DE MAYO</option>
+                <option value="515">PROVIDENCIA</option>
+                <option value="647">PUEBLO NUEVO</option>
+                <option value="645">PUENTE BLANC0</option>
+                <option value="496">PUENTE BLANCO</option>
+                <option value="258">PUEYRREDON</option>
+                <option value="292">PUNILLA</option>
+                <option value="390">Q</option>
+                <option value="618">QUEBRADA DE LAS ROSAS</option>
+                <option value="130">QUILMES</option>
+                <option value="554">QUIMICOS</option>
+                <option value="627">QUINTA SANTA ANA</option>
+                <option value="551">QUINTAS DE ARGUELLO</option>
+                <option value="557">QUINTAS DEL MIRADOR</option>
+                <option value="304">QUINTAS SAN ANTONIO</option>
+                <option value="119">QUISQUIZACATE</option>
+                <option value="562">R. SUR</option>
+                <option value="579">RAMOS MEJIA</option>
+                <option value="672">RECOLETA</option>
+                <option value="312">REMEDIOS DE ESCALADA</option>
+                <option value="133">REMEMBRANZA</option>
+                <option value="567">RENACIMIENTO</option>
+                <option value="279">RENE FAVALORO</option>
+                <option value="503">REPUBLICA</option>
+                <option value="67">RES EL CRUCERO</option>
+                <option value="272">RESIDENCIAL</option>
+                <option value="276">RESIDENCIAL AMERICA</option>
+                <option value="463">RESIDENCIAL OESTE</option>
+                <option value="109">RESIDENCIAL OLIVOS</option>
+                <option value="2">RESIDENCIAL SAN ANTONIO</option>
+                <option value="134">RESIDENCIAL SAN CARLOS</option>
+                <option value="668">RESIDENCIAL SAN ROQUE</option>
+                <option value="282">RESIDENCIAL SANTA ANA</option>
+                <option value="293">RESIDENCIAL TURUS</option>
+                <option value="265">RESIDENCIAL VELEZ SARFIELD</option>
+                <option value="285">RINCON BONITO</option>
+                <option value="148">RIO CEBALLOS</option>
+                <option value="87">RIO SEGUNDO</option>
+                <option value="600">RIVADAVIA</option>
+                <option value="246">RIVERA INDARTE</option>
+                <option value="289">ROBLES</option>
+                <option value="646">ROBLES DE HORIZONTE</option>
+                <option value="517">ROMA</option>
+                <option value="350">ROQUE SAENZ PE?A</option>
+                <option value="456">ROSEDAL</option>
+                <option value="453">ROSEDAL ANEXO</option>
+                <option value="252">RUCCI</option>
+                <option value="31">SABATINI</option>
+                <option value="189">SALDAN</option>
+                <option value="164">SAN ALBERTO</option>
+                <option value="541">SAN ALFONSO</option>
+                <option value="386">SAN ALFONSO II</option>
+                <option value="530">SAN CARLOS</option>
+                <option value="143">SAN CARLOS SUR</option>
+                <option value="267">SAN CAYETANO</option>
+                <option value="620">SAN CLEMENTE</option>
+                <option value="580">SAN DANIEL</option>
+                <option value="628">SAN FERNANDO</option>
+                <option value="316">SAN FRANCISCO</option>
+                <option value="609">SAN IGNACIO</option>
+                <option value="209">SAN ISIDRO</option>
+                <option value="4">SAN JAVIER</option>
+                <option value="22">SAN JORGE</option>
+                <option value="375">SAN JOSE</option>
+                <option value="211">SAN JOSE OBRERO</option>
+                <option value="665">SAN JUSTO</option>
+                <option value="566">SAN LORENZO</option>
+                <option value="591">SAN LORENZO SUD</option>
+                <option value="224">SAN LUIS CAPITAL</option>
+                <option value="321">SAN MARCELO</option>
+                <option value="429">SAN MARTIN</option>
+                <option value="385">SAN MARTIN NORTE</option>
+                <option value="80">SAN MIGUEL</option>
+                <option value="654">SAN NICOLAS</option>
+                <option value="383">SAN PABLO</option>
+                <option value="392">SAN RAFAEL</option>
+                <option value="334">SAN REMO</option>
+                <option value="399">SAN ROMAN</option>
+                <option value="366">SAN ROQUE</option>
+                <option value="263">SAN SALVADOR</option>
+                <option value="40">SAN TELMO</option>
+                <option value="522">SAN VICENTE</option>
+                <option value="443">SANTA ANA</option>
+                <option value="669">SANTA CATARINA</option>
+                <option value="278">SANTA CECILIA</option>
+                <option value="624">SANTA CLARA DE ASIS</option>
+                <option value="241">SANTA CRUZ DEL LAGO</option>
+                <option value="214">SANTA ISABEL 1? SECCION</option>
+                <option value="99">SANTA ISABEL 2</option>
+                <option value="185">SANTA ISABEL I</option>
+                <option value="678">SANTA ISABEL II SECCION</option>
+                <option value="123">SANTA ISABEL III</option>
+                <option value="489">SANTA ISABEL TERCERA</option>
+                <option value="639">SANTA MARIA</option>
+                <option value="561">SANTA RITA</option>
+                <option value="200">SANTA ROSA</option>
+                <option value="315">SANTA TERESITA</option>
+                <option value="114">SARGENTO CABRAL</option>
+                <option value="631">SARMIENTO</option>
+                <option value="202">SEP</option>
+                <option value="329">SIERRAS Y PARQUE</option>
+                <option value="51">SILVANO FUNES</option>
+                <option value="84">SIN BARRIO</option>
+                <option value="415">SIVANO FUNES</option>
+                <option value="459">SMATA</option>
+                <option value="35">SMATA II</option>
+                <option value="480">SOL NACIENTE</option>
+                <option value="310">SOL Y RIO</option>
+                <option value="284">SOLARES DE ARGUELLO</option>
+                <option value="217">SOLARES DE LAS ENSENADAS</option>
+                <option value="397">SOLARES DE SANTA MARIA</option>
+                <option value="381">STA RITA</option>
+                <option value="458">STOCKLIN</option>
+                <option value="73">STORZTI</option>
+                <option value="494">SUARES</option>
+                <option value="473">SUAREZ</option>
+                <option value="8">SUMARAN</option>
+                <option value="283">SUR</option>
+                <option value="103">TABLADA PARK</option>
+                <option value="651">TALAR DE MENDIOLAZA</option>
+                <option value="53">TALLERES</option>
+                <option value="388">TALLERES (0)</option>
+                <option value="438">TALLERES (E)</option>
+                <option value="569">TALLERES (S)</option>
+                <option value="417">TALLERES ESTE</option>
+                <option value="14">TEJAS DEL SUR</option>
+                <option value="660">TEODORO FE VILLASOL</option>
+                <option value="455">TEODORO FELS</option>
+                <option value="297">TERRANOVA</option>
+                <option value="173">TERRAZAS DEL CERRO</option>
+                <option value="465">TILLARD</option>
+                <option value="560">TIRO FEDERAL</option>
+                <option value="457">TRANVIARIOS</option>
+                <option value="333">TRES ARBOLES</option>
+                <option value="277">UDINE</option>
+                <option value="666">UNION</option>
+                <option value="544">UNQUILLO</option>
+                <option value="39">UOCRA</option>
+                <option value="256">URCA</option>
+                <option value="461">URQUIZA</option>
+                <option value="423">V. LOS PINOS</option>
+                <option value="550">VALLE DEL CERRO</option>
+                <option value="273">VALLE DEL SOL</option>
+                <option value="632">VALLE ESCONDIDO</option>
+                <option value="614">VENEZUELA</option>
+                <option value="658">VICENTE LOPEZ</option>
+                <option value="469">VICOR</option>
+                <option value="294">VIILLA POSSE</option>
+                <option value="290">VILLA WALCALDE</option>
+                <option value="116">VILLA ABALOS</option>
+                <option value="178">VILLA ADELA</option>
+                <option value="86">VILLA ALBERDI</option>
+                <option value="518">VILLA ALLENDE</option>
+                <option value="479">VILLA ALLENDE CENTRO</option>
+                <option value="403">VILLA ALLENDE GOLF</option>
+                <option value="662">VILLA ALLENDE LOMAS</option>
+                <option value="9">VILLA ALLENDE PARQUE</option>
+                <option value="120">VILLA ARGENTINA</option>
+                <option value="274">VILLA ASALAIZ</option>
+                <option value="213">VILLA ASPASIA</option>
+                <option value="11">VILLA BELGRANO</option>
+                <option value="253">VILLA BUENA VISTA</option>
+                <option value="353">VILLA BUSTOS</option>
+                <option value="431">VILLA CABRERA</option>
+                <option value="225">VILLA CAEIRO</option>
+                <option value="433">VILLA CENTENARIO</option>
+                <option value="244">VILLA CLARET</option>
+                <option value="623">VILLA CORINA</option>
+                <option value="583">VILLA CORINO</option>
+                <option value="262">VILLA CORNU</option>
+                <option value="317">VILLA CRESPO</option>
+                <option value="157">VILLA CURA BROCHERO</option>
+                <option value="62">VILLA DE LA MERCED</option>
+                <option value="418">VILLA DE SOTO</option>
+                <option value="268">VILLA DEL LAGO</option>
+                <option value="574">VILLA EL LIBERTADOR</option>
+                <option value="587">VILLA ESQUIU</option>
+                <option value="309">VILLA EUCARISTICA</option>
+                <option value="510">VILLA GRAN PARQUE</option>
+                <option value="308">VILLA IRUPE</option>
+                <option value="153">VILLA ITALIA</option>
+                <option value="346">VILLA LIBERTADOR</option>
+                <option value="162">VILLA LOS ANGELES</option>
+                <option value="556">VILLA LOS LLANOS</option>
+                <option value="160">VILLA LUJAN</option>
+                <option value="7">VILLA MARTA</option>
+                <option value="629">VILLA MARTINEZ</option>
+                <option value="69">VILLA OVIEDO</option>
+                <option value="430">VILLA PAEZ</option>
+                <option value="676">VILLA PARQUE CHACABUCO</option>
+                <option value="128">VILLA PARQUE SANTA ANA</option>
+                <option value="222">VILLA PARQUE SIQUIMAN</option>
+                <option value="661">VILLA POSE</option>
+                <option value="445">VILLA REVOL</option>
+                <option value="196">VILLA RIVERA INDARTE</option>
+                <option value="122">VILLA SAN ANTONIO</option>
+                <option value="76">VILLA SARMIENTO</option>
+                <option value="17">VILLA SERRANA</option>
+                <option value="10">VILLA SIBURU</option>
+                <option value="377">VILLA SOL</option>
+                <option value="481">VILLA UNION</option>
+                <option value="625">VILLA URQUIZA</option>
+                <option value="124">VILLA ZALAI</option>
+                <option value="677">VILLA ZOILA</option>
+                <option value="232">YACUZI</option>
+                <option value="537">YAPEYU</option>
+                <option value="266">YOCSINA</option>
+                <option value="519">YOFRE NORTE</option>
+                <option value="100">YOFRE SUR</option>
+                <option value="664">ZUAREZ</option>
+                <option value="30">ZUMARAN</option>
+                <option value="533">?UPORA</option>
+                <option value="1">OTRO --&gt;</option>
+              </select>
+              <input
+                type="text"
+                id="otrobarrio"
+                name="otrobarrio"
+                size="16"
+                value=""
+                disabled=""
+              />
+            </p>
+          </section>
+          <section class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Localidad</strong><font> * </font>
+            </p>
+            <p class="socios--parrafos">
+              <select
+                id="localidadSelect"
+                onchange="if(this.value=='1') {document.getElementById('otraloca').disabled = false} else {document.getElementById('otraloca').disabled = true} "
+              >
+                <option value="1">OTRO --&gt;</option>
+              </select>
+              <input
+                type="text"
+                id="otraloca"
+                name="otraloca"
+                size="16"
+                value=""
+                disabled=""
+              />
+            </p>
+          </section>
+
+          <p class="socios--parrafos">
+            <strong>Nacionalidad</strong>
+          </p>
+          <p class="socios--parrafos">
+            <select name="nacionalidad">
+              <option value="1">ARGENTINA</option>
+              <option value="2">EXTRANJERO</option>
+            </select>
+          </p>
+
+          <p class="socios--parrafos">
+            <strong>¿Es usted Jubilado/a?</strong>
+          </p>
+          <p class="socios--parrafos">
+            <select name="jubilado">
+              <option value="N">No</option>
+              <option value="S">Si</option>
+            </select>
+          </p>
+
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong
+                >¿Posee usted un CUD (certificado único de
+                discapacidad)?</strong
+              >
+            </p>
+            <p class="socios--parrafos">
+              <select name="discap">
+                <option value="1">No</option>
+                <option value="3">Si</option>
+              </select>
+            </p>
+          </div>
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Socio Toro</strong>
+            </p>
+            <p class="socios--parrafos">
+              <select name="referidotipo">
+                <option value="DNI">DNI</option>
+                <option value="EMP">EMP</option>
+                <option value="EXT">EXT</option>
+                <option value="LC">LC</option>
+                <option value="LE">LE</option>
+                <option value="PAL">PAL</option>
+                <option value="PAS">PAS</option>
+                <option value="PRU">PRU</option>
+              </select>
+              <input
+                name="nrodoc"
+                type="number"
+                size="9"
+                maxlength="15"
+                required=""
+              />
+              <br />
+              <font>
+                Si sos referido de algún socio ya existente, ingresa su DNI
+                aqui.</font
+              >
+            </p>
+          </div>
+
+          <h3 class="h3--socios">DOCUMENTACIÓN</h3>
+
+          <p class="p--documentacion">Para completar adjunta lo siguiente:</p>
+          <p class="p--documentacion">
+            LA FOTO CARNET A SUBIR DEBERÁ SER 4 X 4 // COLOR // ACTUALIZADA.
+            Estos requisitos son excluyentes. En caso de no tener las
+            características requeridas, el trámite quedará inconcluso.
+          </p>
+
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Foto Carnet</strong><font> * </font>
+            </p>
+            <div>
+              <input type="file" required="" />
+              <p class="p--atencion">Formato .JPG y de hasta 1MB</p>
+            </div>
+          </div>
+
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>Fotocopia DNI</strong><font> * </font>
+            </p>
+            <div>
+              <input name="fotodni" type="file" required="" />
+              <p class="p--atencion">Formato .JPG y de hasta 1MB</p>
+            </div>
+          </div>
+
+          <div class="flex-start">
+            <p class="socios--parrafos margin--bottom">
+              <strong>Constancia de Jubilación</strong><br />
+              <font> (solo en caso de corresponder) </font>
+            </p>
+            <div>
+              <input type="file" />
+              <p class="p--atencion">Formato .JPG y de hasta 1MB</p>
+            </div>
+          </div>
+
+          <div class="flex-start">
+            <p class="socios--parrafos">
+              <strong>CUD (certificado único de discapacidad)</strong><br />
+              <font> (solo en caso de corresponder) </font>
+            </p>
+            <div>
+              <input type="file" />
+              <p class="p--atencion">Formato .JPG y de hasta 1MB</p>
+            </div>
+          </div>
+
+          <div class="socios--parrafos socios--div">
+            <h3 class="h3--socios">ENTREGA DE CARNET</h3>
+            <br />
+            <select name="envio" class="margin--bottom">
+              <option value="N">Retiro en Sede Salguero</option>
+              <option value="O">Enviar con el de otro socio</option>
+              <option value="EN">Envío Nacional ($6500)</option>
+              <option value="EI">Envío a Internacional ($15000)</option>
+            </select>
+
+            <label
+              ><br />
+              1. Personalmente, en la Sede de Salguero - Lunes a Viernes 9 a 18
+              hs. Tiempo máximo de entrega: a partir de las 48 hs. hábiles de
+              realizado el trámite<br />
+              2. Enviar con el de otro socio:
+              <input
+                class="margin"
+                type="text"
+                placeholder="Nro de DNI del otro socio"
+              /><br />
+              3 y 4. En mi domicilio, envío por correo. Envío Nacional: $6500
+              (demora de 15 días hábiles); Envío Internacional: $15000 (sujeto a
+              modificación por la distancia). Tiempo máximo de entrega: 1
+              mes</label
+            >
+          </div>
+
+          <input type="hidden" />
+          <center class="margin">
+            <input name="Enviar" type="submit" value="Siguiente >>" />
+          </center>
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer class="contenedor">
+    <nav class="navegacion">
+      <div class="nav--footer">
+        <h2>Seguinos!</h2>
+        <a
+          href="https://twitter.com/ToroWine"
+          class="navegacion__enlace iconFooter icono"
+          target="_blank"
+        >
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <!--Icono Twitter-->
+        <a
+          href="https://www.instagram.com/torowine_/"
+          class="navegacion__enlace icono iconFooter"
+          target="_blank"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+      <!--Icono Instagram-->
+      <a href="index.html ">
+        <img src="./img/Logo Blanco.png" alt="Logo Toro" class="toro" />
+      </a>
+      <div class="p--footer">
+        <p>Tobias Moreno 2024. Derechos Reservados</p>
+      </div>
+    </nav>
+  </footer>
+</html>
